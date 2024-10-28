@@ -1,0 +1,131 @@
+.payment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px; /* Increased padding for a more spacious layout */
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif; /* Added font family */
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased gap for better spacing */
+}
+
+.payment-form h1 {
+  font-size: 24px; /* Made the main heading larger */
+  margin-bottom: 20px; /* Added margin to separate from form */
+  text-align: center; /* Centered the heading */
+  color: #333; /* Darker color for better readability */
+}
+
+.payment-form h2 {
+  margin-top: 30px; /* More spacing above section headers */
+  font-size: 20px; /* Slightly larger font for section titles */
+  border-bottom: 2px solid #ff4081; /* Added underline to section titles */
+  padding-bottom: 10px; /* Padding below the header */
+  color: #444; /* A bit darker for section headings */
+}
+
+.payment-form input,
+.payment-form select {
+  padding: 12px; /* Increased padding for input fields */
+  margin-top: 5px; /* Less margin at the top */
+  border: 1px solid #ccc; /* Border color for better visibility */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Larger font size for input text */
+  transition: border 0.3s; /* Smooth transition for border */
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  border-color: #ff4081; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.payment-form .input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form .input-group label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels for better visibility */
+}
+
+.payment-form .form-row {
+  display: flex;
+  justify-content: space-between; /* Space out input groups */
+}
+
+.payment-form .form-row input {
+  flex: 1;
+  margin-right: 10px; /* Add spacing between inputs */
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between; /* Space between payment buttons */
+}
+
+.payment-form .btn {
+  background-color: #ff4081; /* Main button color */
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Increased padding for buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for button text */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.payment-form .btn:hover {
+  background-color: #e91e63; /* Darker shade on hover */
+}
+
+.payment-form .btn.active {
+  background-color: #e91e63; /* Make active button stand out */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Add subtle shadow */
+}
+
+.payment-form small {
+  color: #666; /* Lighter color for small text */
+  font-size: 14px; /* Slightly larger font for small text */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.acknowledgement {
+  display: flex;
+  align-items: center; /* Align checkbox and label */
+}
+
+.acknowledgement input {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .payment-form .form-row {
+      flex-direction: column;
+  }
+
+  .payment-options {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .payment-form .btn {
+      width: 100%; /* Full-width buttons on mobile */
+  }
+}
+
+  
+  

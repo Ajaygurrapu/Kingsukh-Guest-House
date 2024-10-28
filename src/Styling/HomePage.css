@@ -1,0 +1,265 @@
+/* Home Container */
+.home-container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px; /* Keeping existing padding */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to center */
+  width: calc(100% - 40px); /* Keep this width */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center; /* Center contents */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background for visibility */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF4500;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 10px; /* Moved the toggle button to the left */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Content */
+.content {
+  padding-top: 80px;
+  max-width: 600px;
+  z-index: 2;
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 600px;
+  width: calc(100% - 60px); /* Adjusted width */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Each form group displayed on its own line */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+.form-group label {
+  font-size: 20px; /* Increased font size for visibility */
+  display: block;
+  margin-bottom: 5px;
+  color: white; /* Set label text color to white */
+}
+
+.form-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px; /* Increased font size for better visibility */
+  background-color: rgba(255, 255, 255, 0.9); /* White background for input */
+  color: black; /* Set input text color to black */
+  text-align: left; /* Align text to the left */
+}
+
+.form-group input::placeholder {
+  color: rgba(0, 0, 0, 0.7); /* Placeholder color for better visibility */
+}
+
+/* Headings and Paragraphs */
+.heading {
+  color: white; /* Set h1 text color to white */
+  font-size: 2.5em; /* Increase font size for visibility */
+}
+
+.sub-heading {
+  color: white; /* Set sub-heading text color to white */
+  font-size: 1.8em; /* Increase font size for visibility */
+}
+
+.description {
+  color: white; /* Set description text color to white */
+  font-size: 1.2em; /* Increase font size for visibility */
+}
+.btn.book-now {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.btn.book-now:hover {
+  background-color: #FF6347;
+}
+.gallery-section {
+  padding: 20px;
+  text-align: center;
+}
+/* Gallery grid container */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set minimum size for items */
+  gap: 15px;
+}
+
+/* Gallery item container */
+.gallery-item {
+  position: relative;
+  width: 100%; 
+  aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops images to fill the square container */
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+/* Map Container */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.gmap_iframe {
+  height: 400px !important;
+}
+/* Footer styling */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content > div {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px;
+  display: flex; /* Added to align items in a column */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  height: 100%; /* Allow full height for even spacing */
+}
+
+.footer-content h3,
+.footer-content h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-content p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #aaa;
+}
+/* Add this to your HomePage.css */
+.social-icons {
+  display: flex;              /* Use flexbox for alignment */
+  gap: 10px;                 /* Add space between the icons */
+}
+
+.social-icons a {
+  color: white;              /* Set icon color to white */
+  font-size: 24px;           /* Adjust the icon size (change as needed) */
+  transition: color 0.3s;    /* Smooth color transition on hover */
+}
+
+.social-icons a:hover {
+  color: #ccc;               /* Change color on hover for better visibility */
+}

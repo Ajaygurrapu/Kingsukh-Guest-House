@@ -1,0 +1,92 @@
+/* Main container styling for Contact Page */
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Contact Info (Pink Box) */
+  .contact-info {
+    background-color: #ff0066;  /* Pink color for the contact info box */
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    color: white;  /* Sets the text color to white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  /* Typography inside the Contact Info */
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;  /* Heading text in white */
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;  /* Paragraph text in white */
+  }
+  
+  /* Links inside the Contact Info */
+  .contact-info a {
+    color: white;  /* Email link in white */
+    text-decoration: none;
+  }
+  
+  /* Hover effect for links */
+  .contact-info a:hover {
+    color: #ddd;  /* Light grey on hover */
+  }
+  
+  /* Icons (They will keep their original color) */
+  .contact-info i {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Flexbox layout for the message form */
+  .contact-form {
+    width: 55%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the send button */
+  .contact-form button:hover {
+    background-color: #e60059;
+  }
+  
+  
+  
+  
+
+
+

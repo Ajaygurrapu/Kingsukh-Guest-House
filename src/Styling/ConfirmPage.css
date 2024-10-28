@@ -1,0 +1,57 @@
+.confirm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .confirmation-box {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .congrats-gif {
+    width: 150px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #e74c3c; /* Vibrant red */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    color: #3498db; /* Vibrant blue */
+  }
+  
+  .payment-info {
+    margin-top: 20px;
+  }
+  
+  .payment-info p {
+    font-size: 1.2rem;
+    color: #8e44ad; /* Vibrant purple */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
